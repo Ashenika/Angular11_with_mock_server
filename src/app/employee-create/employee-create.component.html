@@ -1,0 +1,51 @@
+<div class="col-lg-12" id="empform">
+
+        <h3>Add New Employee</h3>
+
+    <div class="emp-form">
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <input type="text" placeholder="First Name" required class="form-control" [(ngModel)]="employeeService.currentEmployee.fname">
+        </div>
+        <div class="col-md-6 form-group">
+            <input type="text" placeholder="Last Name" required class="form-control" [(ngModel)]="employeeService.currentEmployee.lname">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input type="text" placeholder="Email" required class="form-control" [(ngModel)]="employeeService.currentEmployee.email">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <input type="number" required placeholder="Age" class="form-control" [(ngModel)]="employeeService.currentEmployee.age">
+        </div>
+        <div class="col-md-6 form-group">
+            <input type="text" placeholder="Address" class="form-control" [(ngModel)]="employeeService.currentEmployee.address">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <input  type="text" required  placeholder="department" class="form-control" [(ngModel)]="employeeService.currentEmployee.department">
+        </div>
+        <div class="col-md-6 form-group">
+            <input type="file" placeholder="Avatar" class="form-control" [(ngModel)]="employeeService.currentEmployee.imageUrl">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <button class="btn btn-success btn-md pull-right" (click)="createEmployee(employeeService.currentEmployee)">
+                <i class="fa fa-save"></i>
+                SAVE
+            </button>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-primary btn-md " (click)="clearEmployee()">
+                <i class="fa fa-retweet"></i>
+                CLEAR
+            </button>
+        </div>
+    </div>
+</div>
+
+</div>

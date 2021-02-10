@@ -1,0 +1,51 @@
+<div class="col-lg-12" id="emplist">
+    <h3>Employees List</h3>
+    <a class="btn btn-primary btn-md  pull-right" routerLink="../create">Add new Employee</a>
+    <br>
+    <br>
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Department</th>
+            <th>Email</th>
+            <th>Image</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td colspan="8">
+                <div class="form-group  btn-block">
+                    <input type="text" class="form-control" placeholder="Search Here..." [(ngModel)]="filterTerm">
+                </div>
+            </td>
+        </tr>
+        <tr *ngFor="let employee of employeeService.allEmployee  | filter:filterTerm">
+            <td>{{employee.id}}</td>
+            <td>{{employee.fname}}  {{employee.lname}}</td>
+            <td>{{employee.age}}</td>
+            <td>{{employee.address}}</td>
+            <td>{{employee.department}}</td>
+            <td>{{employee.email}}</td>
+            <td><img src="{{employee.imageUrl}}" class="avatar" alt="avatar" id="output" onload="loadFile(event)"></td>
+            <td>
+                <a class="btn"  (click)="edit(employee.id)"><i class="fa fa-edit"></i>Edit</a>
+            </td>
+            <td>
+                <a class="btn text-danger"  (click)="deleteEmployee(employee.id)"><i class="fa fa-trash"></i>Remove</a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    var loadFile = function(event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+</script>

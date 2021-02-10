@@ -1,0 +1,50 @@
+<div class="col-lg-12" id="empform">
+
+        <h3>Employee Edit</h3>
+<div class="emp-form">
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <input placeholder="First Name" class="form-control" [(ngModel)]="employeeService.employeeEdit.fname">
+        </div>
+        <div class="col-md-6 form-group">
+            <input placeholder="Last Name" class="form-control" [(ngModel)]="employeeService.employeeEdit.lname">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 form-group">
+            <input placeholder="Email" class="form-control" [(ngModel)]="employeeService.employeeEdit.email">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <input type="number" placeholder="Age" class="form-control" [(ngModel)]="employeeService.employeeEdit.age">
+        </div>
+        <div class="col-md-6 form-group">
+            <input placeholder="Address" class="form-control" [(ngModel)]="employeeService.employeeEdit.address">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 form-group">
+            <input type="text" placeholder="department" class="form-control" [(ngModel)]="employeeService.employeeEdit.department">
+        </div>
+        <div class="col-md-6 form-group">
+            <input type="file" placeholder="Avatar" class="form-control" [(ngModel)]="employeeService.employeeEdit.imageUrl">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <button class="btn btn-success btn-lg btn-block" (click)="updateEmployee(employeeService.employeeEdit)">
+                <i class="fa fa-save"></i>
+                SAVE
+            </button>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-primary btn-lg btn-block" (click)="clearEmployee()">
+                <i class="fa fa-retweet"></i>
+                CLEAR
+            </button>
+        </div>
+    </div>
+</div>
+
+</div>

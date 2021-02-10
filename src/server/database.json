@@ -1,0 +1,44 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "fname": "John",
+      "lname": "Doe",
+      "email": "john@microsoft.com",
+      "age": 18,
+      "address": "55/B",
+      "department": "FINANCE",
+      "imageUrl": "./assets/avatar1.jpg"
+    },
+    {
+      "id": 2,
+      "fname": "Kate",
+      "lname": "Gates",
+      "email": "kate@microsoft.com",
+      "age": 25,
+      "address": "55/B",
+      "department": "FINANCE",
+      "imageUrl": "./assets/avatar2.jpg"
+    },
+    {
+      "id": 3,
+      "fname": "Lauryn",
+      "lname": "Oberbrunner",
+      "email": "Maritza_Hintz@gmail.com",
+      "age": 72,
+      "address": "7514 Natalia Rapid",
+      "department": "magnam",
+      "imageUrl": "./assets/avatar3.png"
+    },
+    {
+      "id": 4,
+      "fname": "Asheni",
+      "lname": "Perera",
+      "email": "ashenika@gmail.com",
+      "age": 25,
+      "address": "69/B,",
+      "department": "IT",
+      "imageUrl": "./assets/avatar4.jpg"
+    }
+  ]
+}

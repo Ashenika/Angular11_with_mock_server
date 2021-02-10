@@ -1,0 +1,10 @@
+.avatar {
+    vertical-align: middle;
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+}
+.jumbotron{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

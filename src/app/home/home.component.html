@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="../../assets/brand.png" class="avatar" alt="avatar"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['create']">Add New Employee</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['list']">View All Employees</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<ngx-spinner></ngx-spinner>
+<div class="container">
+    <div class="jumbotron">
+        <h1 align="center">Employee Management System - XYZ</h1>
+        <p align="center">Select the menu from above</p>
+    </div>
+    <div class="row">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
